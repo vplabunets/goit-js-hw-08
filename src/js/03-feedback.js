@@ -48,7 +48,7 @@ function onFormSubmit(event) {
   if (inputEl.value !== '' && textAreaEl.value !== '') {
     event.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
-    console.log(formLocalData);
-    // localStorage.clear();
+    localStorage.clear();
+    formLocalData = {};
   } else alert('Please, fill both fields');
 }
